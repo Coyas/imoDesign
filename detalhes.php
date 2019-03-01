@@ -1,6 +1,4 @@
-<?php 
-require('header.php');
-?>
+
 <div class="meumarginb container">
     <h1 class="gallery-title">Showroom</h1>
     <div class="row">
@@ -83,6 +81,3 @@ require('header.php');
     </div>
 </div>
 
-<?php 
-require('footer.php');
-?>

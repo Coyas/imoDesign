@@ -1,6 +1,4 @@
-<?php 
-require('header.php');
-?>
+
 
     
   <!-- Page Content -->
@@ -72,6 +70,3 @@ require('header.php');
 </div>
 </div>
 
-<?php 
-require('footer.php');
-?>
