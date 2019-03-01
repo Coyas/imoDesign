@@ -339,6 +339,17 @@ input.meu-form::placeholder {
 
 
 /* PAGINA VENDER */
+a.linkdetalhes {
+  text-decoration: none;
+}
+a.linkdetalhes:hover {
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
+}
 .arrendar {
   margin-bottom: 40px;
 }
@@ -355,6 +366,85 @@ input.meu-form::placeholder {
   font-size:1em;
   padding: 10px;
   color: #c19435;
+}
+
+/* CADASTRO DE PROPRIEDADE */
+.formcadpro {
+  background: #ecba49;
+}
+.meucontainer {
+  width: 100%;
+  height: auto;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-15 {
+  width: 11%;
+  padding-right: 10px;
+  padding-left: 10px; 
+}
+.meucheckbox {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.meucheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c19435;
+}
+.meucheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.meucheckbox input:checked ~ .checkmark {
+  background-color: #c19435;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.meucheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.meucheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.normas {
+  margin-top: 20px;
+text-align: justify;
+font-size: 0.8em;
+color: #121315;
 }
 
 /* FOOTER */
@@ -427,3 +517,297 @@ input.meu-form::placeholder {
 
   }
   
+/* STEPPERS */
+
+.info-text {
+  text-align: left;
+  color: #121315;
+  font-size:1.6em !important;
+}
+.meulabel {
+  text-align: left !important;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.meutypenumber {
+  background: #b3873d;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.meutextarea {
+  background: #b3873d;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*Color Variables*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+.multi_step_form {
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  min-height: 820px;
+  max-width: 810px;
+  padding-bottom: 30px; 
+  margin: 0 auto;
+  z-index: 1;
+}
+.multi_step_form #msform .tittle {
+  text-align: center;
+  padding-bottom: 55px;
+}
+.multi_step_form #msform .tittle h2 {
+  font: 500 24px/35px "Roboto", sans-serif;
+  color: #3f4553;
+  padding-bottom: 5px;
+}
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset {
+  border: 0;
+  height: 500px;
+  padding: 2px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+.multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 20px;
+  height: auto;
+  background: #b3873d;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #5f6771;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+.multi_step_form #msform fieldset .input-group {
+  padding-bottom: 20px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file {
+  width: 100%;
+  height: auto;
+}
+.multi_step_form #msform fieldset .file_added li {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .file_added li a {
+  color: #5cb85c;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  position: absolute;
+  left: 0;
+  transform: rotate(20deg);
+}
+.multi_step_form #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #99a2a8;
+  font-size: 9px;
+  width: calc(100%/4);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Roboto", sans-serif;
+}
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  content: "2";
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  content: "3";
+}
+.multi_step_form #msform #progressbar li:nth-child(4):before {
+  content: "4";
+}
+.multi_step_form #msform #progressbar li:before {
+  content: "1";
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eaf0f4;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+.multi_step_form #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+.multi_step_form #msform #progressbar li.active {
+  color: #b3873d;
+}
+.multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
+  background: #b3873d;
+  color: white;
+}
+.multi_step_form #msform .action-button {
+  background: #b3873d;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 130px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #b3873d;
+  margin: 0 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.multi_step_form #msform .action-button:hover, .multi_step_form #msform .action-button:focus {
+  background: #405867;
+  border-color: #405867;
+}
+.multi_step_form #msform .previous_button {
+  background: transparent;
+  color: #99a2a8;
+  border-color: #99a2a8;
+}
+.multi_step_form #msform .previous_button:hover, .multi_step_form #msform .previous_button:focus {
+  background: #405867;
+  border-color: #405867;
+  color: #fff;
+}
+
+.img-preview {
+  opacity: 0.5; width:100%;
+}
+.preview{padding:50px 150px; position:relative}
+.centered {
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-confirmar{
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #b3873d;
+}
+.obg {
+  font-size: 1em; color: #fff; text-align:left;
+}
+
+.input-group-addon.primary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 118, 177);
+  border-color: rgb(40, 94, 142);
+}
+.input-group-addon.success {
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(76, 174, 76);
+}
+.input-group-addon.info {
+  color: rgb(255, 255, 255);
+  background-color: rgb(57, 179, 215);
+  border-color: rgb(38, 154, 188);
+}
+.input-group-addon.warning {
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 173, 78);
+  border-color: rgb(238, 162, 54);
+}
+.input-group-addon.danger {
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(212, 63, 58);
+}
+
+/* PAGINA CONTATO*/
+.contato {
+  background-color: #121315;
+  padding: 30px;
+}
+.formfale {
+  background-color: #ecba49;
+  padding: 30px;
+}
+.titlecontato {
+  margin: 30px 1px 30px 1px; 
+  color: #ecba49;
+  font-size: 2.6em;
+  font-weight: 500;
+}
+.titleform {
+  margin: 30px 1px 30px 1px; 
+  color: #121315;
+  font-size: 2.6em;
+  font-weight: 500;
+}
+.itemscontato{
+  display: block;
+  margin: 10px 1px 15px 1px; 
+  color: #ecba49;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.meuselectcontato {
+  background: #121315;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+.inputcontato {
+  margin-bottom: 20px;
+  background: #121315;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+.inputcontato::placeholder {
+  color: #ecba49;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 0.8em;
+}
+.meutextareac {
+  background: #121315;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.meutextareac::placeholder {
+  color: #ecba49;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 0.8em;
+}
