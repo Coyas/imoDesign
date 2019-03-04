@@ -1,11 +1,10 @@
-<div class="">
-<div class="meucontainer">
+<div class="container-fluid">
 <h1 class="gallery-title"> Venda aqui a sua Propriedade </h1>
     <div class="row">
-        <div style="background-color: #000;" class="col-md-4">
-            hhh
+        <div style="background-color: #000;" class="col-md-4 mh-100">
+            
         </div>
-        <div class="formcadpro col-md-8">
+        <div class="formcadpro col-md-8 mh-100">
             <!-- Multi step form --> 
         <section class="multi_step_form">  
         <form id="msform">
@@ -20,9 +19,9 @@
             <fieldset>
             <h3 class="info-text">1. Informações da Propriedade</h3>
             <h4 class="obg"> * Campos Obrigatórios </h4>
-            <div class="form-row">
+            <div class="form">
                 <div class="row">
-                    <div class="input-group col-md-4">
+                    <div class="input-group col-md-4 col-6">
                         <label class="meulabel" for="">Proposito</label>
                         <select class="form-control" name="" id="">
                             <optgroup>
@@ -31,7 +30,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div class="input-group col-md-4">
+                    <div class="input-group col-md-4 col-6">
                         <label class="meulabel" for="">Ilha</label>
                         <select class="form-control" name="" id="">
                             <optgroup>
@@ -40,68 +39,79 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div class="input-group col-md-15">
-                        <label class="meulabel" for="">Quartos</label>
-                        <input class="meutypenumber" type="number">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="input-group col-md-4 col-6">
+                                <label class="meulabel" for="">Quartos</label>
+                                <input class="meutypenumber" type="number">
+                            </div>
+                            <div class="input-group col-md-4 col-6">
+                                <label class="meulabel" for="">Casa banho</label>
+                                <input class="meutypenumber" type="number">
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group col-md-15">
-                        <label class="meulabel" for="">Casa banho</label>
-                        <input class="meutypenumber" type="number">
+                    
+                    
+                    <div class="input-group col-md-4 col-6">
+                        <label class="meulabel" for="">Tipo Propriedade</label>
+                        <select class="form-control" name="" id="">
+                            <optgroup>
+                                <option value=""></option>
+                                <option value="">1</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-group col-md-4 col-6">
+                        <label class="meulabel" for="">Município</label>
+                        <select class="form-control" name="" id="">
+                            <optgroup>
+                                <option value=""></option>
+                                <option value="">1</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="input-group col-md-4 col-4">
+                                <label class="meulabel" for="">Sala de estar</label>
+                                <input class="meutypenumber" type="number">
+                            </div>
+                            <div class="input-group col-md-4 col-4">
+                                <label class="meulabel" for="">Cozinha</label>
+                                <input class="meutypenumber" type="number">
+                            </div>
+                            <div class="input-group col-md-4 col-4">
+                                <label class="meulabel" for="">Garragem</label>
+                                <input class="meutypenumber" type="number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                        <div class=" input-group col-md-6 col-6">
+                            <label class="meulabel" for="">Area</label>
+                            <input class="meutypenumber" type="text">
+                        </div>
+                        <div class="input-group col-md-6 col-6">
+                            <label class="meulabel" for="">Bairro</label>
+                            <input class="meutypenumber" type="text">
+                        </div>
+                        <div class="input-group col-md-6 col-6">
+                            <label class="meulabel" for="">Preço da propriedade</label>
+                            <input class="meutypenumber" type="text">
+                        </div>
+                        <div class="input-group col-md-6 col-6">
+                            <label class="meulabel" for="">Telefone </label>
+                            <input class="meutypenumber input-group-addon danger" type="text" required>
+                        </div>
+                        </div>
                     </div>
                     <div class="input-group col-md-4">
-                            <label class="meulabel" for="">Tipo Propriedade</label>
-                            <select class="form-control" name="" id="">
-                                <optgroup>
-                                    <option value=""></option>
-                                    <option value="">1</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="input-group col-md-4">
-                            <label class="meulabel" for="">Município</label>
-                            <select class="form-control" name="" id="">
-                                <optgroup>
-                                    <option value=""></option>
-                                    <option value="">1</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="input-group col-md-15">
-                            <label class="meulabel" for="">Sala de estar</label>
-                            <input class="meutypenumber" type="number">
-                        </div>
-                        <div class="input-group col-md-15">
-                            <label class="meulabel" for="">Cozinha</label>
-                            <input class="meutypenumber" type="number">
-                        </div>
-                        <div class="input-group col-md-15">
-                            <label class="meulabel" for="">Garragem</label>
-                            <input class="meutypenumber" type="number">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                            <div class=" input-group col-md-6">
-                                <label class="meulabel" for="">Area</label>
-                                <input class="meutypenumber" type="text">
-                            </div>
-                            <div class="input-group col-md-6">
-                                <label class="meulabel" for="">Bairro</label>
-                                <input class="meutypenumber" type="text">
-                            </div>
-                            <div class="input-group col-md-6">
-                                <label class="meulabel" for="">Area</label>
-                                <input class="meutypenumber" type="text">
-                            </div>
-                            <div class="input-group col-md-6">
-                                <label class="meulabel" for="">Bairro *</label>
-                                <input class="meutypenumber input-group-addon danger" type="text" required>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="input-group col-md-4">
-                            <label class="meulabel" for="">Bairro</label>
-                            <textarea class="col-md-12 meutextarea" name="" id="" rows="4"></textarea>
-                        </div>
+                        <label class="meulabel" for="">Descrição </label>
+                        <textarea class="col-md-12 meutextarea" name="" id="" rows="4"></textarea>
+                    </div>
                 </div>
             </div>
                 <div class="row">
@@ -118,7 +128,7 @@
                         </p>
                     </div>
                 </div>
-                <button type="button" class="next action-button" disabled >Próximo</button>
+                <button type="button" class="next action-button" disabled>Próximo</button>
             </fieldset>
 
             <fieldset>

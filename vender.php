@@ -1,7 +1,4 @@
-
-
-    
-  <!-- Page Content -->
+<!-- Page Content -->
 <div class="container">
 <div class="arrendar">
 <h1 class="gallery-title">Propriedades para Vender</h1>

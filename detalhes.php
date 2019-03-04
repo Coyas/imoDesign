@@ -42,7 +42,9 @@
                 <div>
                     <img data-u="image" src="img/021.jpg" />
                     <div data-u="thumb">
-                        <img data-u="thumb" src="img/021-s200x100.jpg" />
+                        <a href="img/021-s200x100.jpg" data-lightbox="roadtrip" data-title="Image desc">
+                            <img data-u="thumb" src="img/021-s200x100.jpg" />
+                        </a>
                     </div>
                 </div>
                 <div>

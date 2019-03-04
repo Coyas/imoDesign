@@ -3,10 +3,20 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="meumenu">
+      <div><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="">
+      </div>
+      <div class="logom">
+      <img src="images/logop.png" width="60" height="60" alt="" class="">
+      </div>
+      <div class="telem">
+        <span> <img src="images/phone.png" width="30" height="30" alt="" class=""> 921 01 15</span>
+      </div>
+      </div>
+
+      <div class="logop">
           <a class="navbar-brand" href="#">
             <img src="images/logop.png" alt="" class="logo">
           </a>
