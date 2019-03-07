@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="input-group col-md-12">
-                        <input class="meubotaocontato" name="" value="Enviar" id="" type="submit">
+                        <input class="meubotaocontatoreverse" name="" value="Enviar" id="" type="submit">
                     </div>
                 </div>
                 </form>

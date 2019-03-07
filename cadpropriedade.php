@@ -41,11 +41,11 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="input-group col-md-4 col-6">
+                            <div class="input-group col-md-6 col-lg-4 col-6">
                                 <label class="meulabel" for="">Quartos</label>
                                 <input class="meutypenumber" type="number">
                             </div>
-                            <div class="input-group col-md-4 col-6">
+                            <div class="input-group col-md-6 col-lg-4 col-6">
                                 <label class="meulabel" for="">Casa banho</label>
                                 <input class="meutypenumber" type="number">
                             </div>
@@ -53,7 +53,7 @@
                     </div>
                     
                     
-                    <div class="input-group col-md-4 col-6">
+                    <div class="input-group col-lg-4 col-md-3 col-6">
                         <label class="meulabel" for="">Tipo Propriedade</label>
                         <select class="form-control" name="" id="">
                             <optgroup>
@@ -62,7 +62,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div class="input-group col-md-4 col-6">
+                    <div class="input-group col-lg-4 col-md-3 col-6">
                         <label class="meulabel" for="">Município</label>
                         <select class="form-control" name="" id="">
                             <optgroup>
@@ -72,7 +72,7 @@
                         </select>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="row">
                             <div class="input-group col-md-4 col-4">
                                 <label class="meulabel" for="">Sala de estar</label>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-lg-8 col-md-8">
                         <div class="row">
                         <div class=" input-group col-md-6 col-6">
                             <label class="meulabel" for="">Area</label>
@@ -141,20 +141,20 @@
             </fieldset>
             
             <fieldset>
-                <h3 class="info-text">3. Preview da publicação</h3>
-                <div class="preview">
-                    <img src="images/p2.jpg" class="img-preview img-fluid" alt="">
-                    <div class="centered"><img width="80" height="80" src="images/preview.png" alt=""></div>
+            <h3 class="info-text">4. Comfirmação da publicação</h3>
+                <div class="comfirmacao">
+                    <img width="100" height="100" src="images/confirmar.png" alt="">
+                    <h4 class="text-confirmar"> Publicação confirmada! </h4>
                 </div>
                 <button type="button" class="action-button previous previous_button">Voltar</button>
                 <button type="button" class="next action-button">Próximo</button>  
             </fieldset>
 
             <fieldset>
-            <h3 class="info-text">4. Comfirmação da publicação</h3>
-                <div class="comfirmacao">
-                    <img width="100" height="100" src="images/confirmar.png" alt="">
-                    <h4 class="text-confirmar"> Publicação confirmada! </h4>
+                <h3 class="info-text">3. Preview da publicação</h3>
+                <div class="preview">
+                    <img src="images/p2.jpg" class="img-preview img-fluid" alt="">
+                    <div class="centered"><img width="80" height="80" src="images/preview.png" alt=""></div>
                 </div>
                 <a href="#" class="action-button">HOME</button> 
                 <a href="#" class="action-button">Ir para pagina</a> 

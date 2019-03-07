@@ -27,11 +27,11 @@
 ?>
 
 <?php 
-  // require('body.php');
-  // require('detalhes.php');
+ require('body.php');
+  //require('detalhes.php');
   //require('vender.php');
   //require('comprar.php');
-  require('cadpropriedade.php');
+  //require('cadpropriedade.php');
    //require('contato.php');
  //require('junte-se.php');
 ?>

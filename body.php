@@ -21,7 +21,7 @@
       <form class="form-inline">
         <div class="container">
         <div class="row">
-          <div class="meucol">
+          <div class="meucol selectmeu">
             <div class="input-group mb-2 formmargin">
                 <select class="meu-select">
                   <option selected>Ilha</option>
@@ -30,12 +30,12 @@
                 </select>
             </div>
           </div>
-          <div class="meucol">
+          <div class="meucol inputmeu">
             <div class="input-group mb-2 formmargin">
               <input type="text" class="meu-form" id="" placeholder="Zona">
             </div>
           </div>
-          <div class="meucol">
+          <div class="meucol selectmeu">
             <div class="input-group mb-2 formmargin">
               <select class="meu-select">
                 <option selected>Tipo Propriedade</option>
@@ -45,17 +45,17 @@
               </select>
             </div>
           </div>
-          <div class="meucol">
+          <div class="meucol inputmeu">
             <div class="input-group mb-2 formmargin">
               <input type="text" class="meu-form" id="" placeholder="Apartir de">
             </div>
           </div>
-          <div class="meucol">
+          <div class="meucol inputmeu">
             <div class="input-group mb-2 mr-sm-2">
               <input type="text" class="meu-form" id="" placeholder="Até">
             </div>
           </div>
-          <div class="meucol">
+          <div class="meucol inputmeu">
             <button type="submit" class="meubotao mb-2"> Filtrar propriedade</button>
           </div>
         

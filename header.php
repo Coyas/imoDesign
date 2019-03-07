@@ -9,7 +9,7 @@
       </button>
       </div>
       <div class="logom">
-      <img src="images/logop.png" width="60" height="60" alt="" class="">
+      <img src="images/logop.png" alt="" class="imlogom">
       </div>
       <div class="telem">
         <span> <img src="images/phone.png" width="30" height="30" alt="" class=""> 921 01 15</span>

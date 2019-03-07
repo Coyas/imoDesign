@@ -8,7 +8,7 @@
     
     <div class="row">
         <?php for( $i = 1; $i <= 4; $i++): ?>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 filter arrendar">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 filter arrendar">
             <div class="destaques"> 
               <a href="" class="linkdetalhes">
                 <img src="images/p2.jpg" class="img-fluid">
@@ -39,31 +39,48 @@
     <div class="formpesquisatodo">
       <div class="">
       <form class="form-inline">
-          <div class="input-group mb-2 formmargin">
+        <div class="container">
+        <div class="row">
+          <div class="meucol selectmeu">
+            <div class="input-group mb-2 formmargin">
+                <select class="meu-select">
+                  <option selected>Ilha</option>
+                  <option value="st">Santo Antão</option>
+                  <option value="sv">São Vicente</option>
+                </select>
+            </div>
+          </div>
+          <div class="meucol inputmeu">
+            <div class="input-group mb-2 formmargin">
+              <input type="text" class="meu-form" id="" placeholder="Zona">
+            </div>
+          </div>
+          <div class="meucol selectmeu">
+            <div class="input-group mb-2 formmargin">
               <select class="meu-select">
-                <option selected>Ilha</option>
-                <option value="st">Santo Antão</option>
-                <option value="sv">São Vicente</option>
+                <option selected>Tipo Propriedade</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
               </select>
             </div>
-        <div class="input-group mb-2 formmargin">
-          <input type="text" class="meu-form" id="" placeholder="Zona">
+          </div>
+          <div class="meucol inputmeu">
+            <div class="input-group mb-2 formmargin">
+              <input type="text" class="meu-form" id="" placeholder="Apartir de">
+            </div>
+          </div>
+          <div class="meucol inputmeu">
+            <div class="input-group mb-2 mr-sm-2">
+              <input type="text" class="meu-form" id="" placeholder="Até">
+            </div>
+          </div>
+          <div class="meucol inputmeu">
+            <button type="submit" class="meubotao mb-2"> Filtrar propriedade</button>
+          </div>
+        
         </div>
-        <div class="input-group mb-2 formmargin">
-          <select class="meu-select">
-            <option selected>Tipo Propriedade</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
         </div>
-        <div class="input-group mb-2 formmargin">
-          <input type="text" class="meu-form" id="" placeholder="Apartir de">
-        </div>
-        <div class="input-group mb-2 mr-sm-2">
-          <input type="text" class="meu-form" id="" placeholder="Até">
-        </div>
-        <button type="submit" class="meubotao mb-2"> Filtrar propriedade</button>
       </form>
       </div>
     </div>

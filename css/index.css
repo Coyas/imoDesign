@@ -23,6 +23,10 @@
     padding-left: .9rem !important;
 }
 
+.dropdown-toggle::after {
+  border-top: .3em solid #c19435 !important;
+}
+
 .bold {
   font-weight: bolder;
 }
@@ -86,9 +90,18 @@
 .formmargin {
     margin-right: .2rem!important;
 }
+.selectmeu {
+  width: 25%;
+}
+.inputmeu {
+  width: 12.2%;
+}
 input.meu-form {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
     border: none;
-    padding: 15px 1px;
+    padding: 15px 5px;
     background: #c19435;
 }
 
@@ -107,7 +120,7 @@ input.meu-form::placeholder {
     color: #121315;
     font-weight: bold;
     vertical-align: middle;
-    background: url(../images/icond.png) no-repeat right .75rem center/8px 10px;
+    background: url(../images/icond.png) no-repeat right .75rem center/15px 15px;
     background-color: #c19435;
     border: none;
     -webkit-appearance: none;
@@ -119,10 +132,10 @@ input.meu-form::placeholder {
     margin-left: -8px;
     cursor: pointer;
     background-color: #121315 !important;
-    padding: 16.5px 10px;
+    padding: 17.6px 5px;
     color: #c19435;
-    font-weight: 600;
-    font-size:0.9em;
+    font-weight: bold;
+    font-size: 0.8em;
     border: none;
 }
 
@@ -486,12 +499,12 @@ color: #121315;
   background: #b3873d;
   border: 0;
   color: #fff;
-  height: 30px;
+  height: 35px;
   width: 100%;
   border-radius: 10px;
 }
 button[disabled=disabled], button:disabled {
-  background-color: #096;
+  background-color: rgb(170, 15, 15);
 }
 .meutextarea {
   color: #fff;
@@ -544,14 +557,21 @@ button[disabled=disabled], button:disabled {
 .multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
   border-radius: 10px;
   border: 0;
-  padding: 5px 20px;
-  height: auto;
-  background: #b3873d;
+  padding: 4px 20px;
+  background-color: #b3873d !important;
   font: 400 15px/48px "Roboto", sans-serif;
-  color: #5f6771;
+  color: #121315;
+  vertical-align: middle;
+  background: url(../images/icond.png) no-repeat right .75rem center/15px 15px;
   box-shadow: none;
   outline: none;
   width: 100%;
+color: #fff;
+padding-bottom: 5px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .multi_step_form #msform fieldset .input-group {
   padding-bottom: 20px;
@@ -761,6 +781,19 @@ button[disabled=disabled], button:disabled {
   color: #121315;
   padding: 7px 15px;
 }
+.meubotaocontatoreverse {
+  max-height: 40px;
+  cursor: pointer;
+  float:right;
+  margin-right: 15px;
+  margin-top: 30px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #121315;
+  border: 2px solid #121315;
+  color: #fff;
+  padding: 7px 15px;
+}
 .meubotaocontatoj {
   max-height: 40px;
   cursor: pointer;
@@ -777,6 +810,11 @@ button[disabled=disabled], button:disabled {
   color: #fff;
   transition: 1.5ms;
   background-color: #121315;
+}
+.meubotaocontatoreverse:hover {
+  color: #121315;
+  transition: 1.5ms;
+  background-color: #ecba49;
 }
 .meubotaocontato:hover {
   color: #fff;
@@ -922,6 +960,10 @@ button[disabled=disabled], button:disabled {
   font-weight: bold;
   color: #c19435;
 }
+.imlogom {
+  width: 60px;
+  height: 60px;
+}
 
 /*   MEDIA QUERIES */
 /* 
@@ -950,6 +992,13 @@ button[disabled=disabled], button:disabled {
   .fullwidth{
     padding: 40px;
   }
+  .logom, .telem {
+    display: none !important;
+  }
+  .meumenu {
+    display: flex;
+  }
+  
 }
 
 /* 
@@ -958,9 +1007,196 @@ button[disabled=disabled], button:disabled {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .fullwidth{
-    padding: 20px;
+  .destaques {
+    margin-bottom: 20px;
   }
+  .meumenu {
+    display: flex;
+  }
+  .logom, .telem {
+    display: block;
+  }
+  .logop {
+    display: none;
+  }
+  .bg-dark {
+    max-height: 140px;
+  }
+  .imlogom {
+    width: 80px;
+    height: 80px;
+  }
+    /* HOME */
+    .fullwidth{
+      padding: 10px;
+    }
+    .lthome {
+      padding: 1px 10px 10px 10px;
+      margin-bottom: 0px !important;
+    }
+    .banner .carousel-item {
+      height: 50vh;
+      min-height: 350px;
+    }
+    
+    .filter-button{
+      font-size: 0.8em !important;
+      padding: 5px 8px !important;
+    }
+    .gallery-title {
+      font-size: 1.8em;
+      padding: 10px 1px 5px 1px;
+    }
+    .txt-nome {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .txt-localizacao {
+      font-size: 1em;
+    }
+    .txt-dimensao {
+      font-size: 1em;
+    }
+    .txt-preco {
+      font-size: 1em;
+    }
+    /*SLIDER FORM*/
+    .meucol {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .formpesquisatodo {
+      padding: 20px 1px;
+      width: 100%;
+    }
+    .formpesquisa {
+      position: relative;
+      margin-top: 0px;
+    }
+    .formmargin {
+      margin-right: .2rem!important;
+    }
+    input.meu-form {
+      height: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.8em;
+      padding: 5px 2px;
+      width: 100%;
+    }
+    .meu-select {
+      height: 30px;
+      border-radius: 10px;
+      font-size: 0.8em;
+      display: inline-block;
+      width: 100%;
+      padding: 5px 5px;
+      font-weight: 400;
+      font-weight: bold;
+    }
+    .meubotao {
+      height: 30px;
+      border-radius: 10px;
+      margin-left: 0px;
+      width: 100%;
+      padding: 3px 4px;
+      font-size:0.8em;
+    }
+    .carousel-indicators {
+      bottom: 150px;
+    }
+  
+      /* PAGINA DETALHES */
+      .icone-detalhes{
+        width: 25px;
+        margin-bottom: 20px;
+        height: 25px;
+      }
+      .com-detalhes b {
+        font-size: 1.2em;
+        margin-bottom: auto
+      }
+      /* PAGINA JUNTE_SE A NOS */
+    .imgjuntese{
+      background: url("../images/junte-se.png");
+      background-size: cover;
+      min-height: 350px;
+    }
+    .fomrjuntese {
+      background-color: #ecba49;
+      min-height: 450px;
+      padding: 20px;
+    }
+    .fomrjuntese .inputcontato {
+      margin: 10px 1px 10px 1px;
+    }
+    .fomrjuntese .meutextareac {
+      margin-top: 10px ;
+    }
+    .inputfile + label {
+      width: 100%;
+      color: #ecba49;
+      border: 2px solid #ecba49;
+      background-color: #121315;
+    }
+    .meubotaocontatoj {
+      width: 100%;
+    }
+    .meubotaocontato {
+      width: 100%;
+    }
+    .meubotaocontatoreverse {
+      width: 100%;
+    }
+    
+    /* PAGINA DETALHES */
+    .titlecontato {
+      font-size: 1.5em;
+    }
+    .icone-detalhes{
+      width: 25px;
+      margin-bottom: 20px;
+      height: 25px;
+    }
+    .com-detalhes b {
+      font-size: 1.3em;
+      margin-bottom: auto
+    }
+    .contato {
+      padding: 15px;
+    }
+    .formfale {
+      padding: 15px;
+    }
+    .titlecontato {
+      margin: 15px 1px 20px 1px;
+      font-size: 1.6em;
+    }
+    .titleform {
+      margin: 15px 1px 20px 1px; 
+      font-size: 1.6em;
+    }
+    .meutextareac {
+      margin-top: 0px;
+    }
+  
+    /* PAGINA CAD PRODUTOS */
+  
+    .multi_step_form #msform fieldset {
+      height: auto;
+      padding: 4px 0;
+    }
+    .info-text {
+      font-size: 1.2em !important;
+    }
+    .preview {
+      padding: 20px;
+      position: relative;
+    }
+    
 }
 
 /* 
@@ -978,90 +1214,187 @@ button[disabled=disabled], button:disabled {
   .logom, .telem {
     display: block;
   }
-  .bg-dark {
-    max-height: 90px;
-  }
   .logop {
     display: none;
   }
-  .fullwidth{
-    padding: 20px;
+  .bg-dark {
+    max-height: 140px;
   }
-  .lthome {
-    padding: 1px 40px 10px 40px;
-    margin-bottom: 0px !important;
+  .imlogom {
+    width: 80px;
+    height: 80px;
   }
-  .banner .carousel-item {
-    height: 40vh;
-    min-height: 350px;
-  }
-  .banner .carousel-indicators li{
-    padding: 2px;
-  }
-  /*SLIDER FORM*/
-  .meucol {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .formpesquisatodo {
-    padding: 20px 1px;
-    width: 100%;
-  }
-  .formpesquisa {
-    position: relative;
-    margin-top: 0px;
-  }
-  .formmargin {
-    margin-right: .2rem!important;
-  }
-  input.meu-form {
-    font-size: 0.6em;
-    padding: 5px 1px;
-    width: 100%;
-  }
-  .meu-select {
-    font-size: 0.6em;
-    display: inline-block;
-    width: 100%;
-    padding: 5px 5px;
-    font-weight: 400;
-    font-weight: bold;
-  }
-  .meubotao {
-    margin-left: 0px;
-    width: 100%;
-    padding: 3px 4px;
-    font-size:0.8em;
-  }
-  .carousel-indicators {
-    bottom: 130px;
-  }
-  .gallery-title {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    padding: 10px 1px 5px 1px;
-  }
-  .txt-nome {
-    margin-top: 10px;
-    font-size: 1.3em;
-  }
-  .txt-localizacao {
-    font-size: 1.1em;
-  }
-  .txt-dimensao {
-    font-size: 1.1em;
-  }
-  .txt-preco {
-    font-size: 1.1em;
-  }
-  /* PAGINA DETALHES */
-  .icone-detalhes{
-    margin-bottom: 20px;
-  }
-
+    /* HOME */
+    .fullwidth{
+      padding: 10px;
+    }
+    .lthome {
+      padding: 1px 10px 10px 10px;
+      margin-bottom: 0px !important;
+    }
+    .banner .carousel-item {
+      height: 50vh;
+      min-height: 350px;
+    }
+    
+    .filter-button{
+      font-size: 0.8em !important;
+      padding: 5px 8px !important;
+    }
+    .gallery-title {
+      font-size: 1.8em;
+      padding: 10px 1px 5px 1px;
+    }
+    .txt-nome {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .txt-localizacao {
+      font-size: 1em;
+    }
+    .txt-dimensao {
+      font-size: 1em;
+    }
+    .txt-preco {
+      font-size: 1em;
+    }
+    /*SLIDER FORM*/
+    .meucol {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .formpesquisatodo {
+      padding: 20px 1px;
+      width: 100%;
+    }
+    .formpesquisa {
+      position: relative;
+      margin-top: 0px;
+    }
+    .formmargin {
+      margin-right: .2rem!important;
+    }
+    input.meu-form {
+      height: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.8em;
+      padding: 5px 2px;
+      width: 100%;
+    }
+    .meu-select {
+      height: 30px;
+      border-radius: 10px;
+      font-size: 0.8em;
+      display: inline-block;
+      width: 100%;
+      padding: 5px 5px;
+      font-weight: 400;
+      font-weight: bold;
+    }
+    .meubotao {
+      height: 30px;
+      border-radius: 10px;
+      margin-left: 0px;
+      width: 100%;
+      padding: 3px 4px;
+      font-size:0.8em;
+    }
+    .carousel-indicators {
+      bottom: 150px;
+    }
+  
+      /* PAGINA DETALHES */
+      .icone-detalhes{
+        width: 25px;
+        margin-bottom: 20px;
+        height: 25px;
+      }
+      .com-detalhes b {
+        font-size: 1.2em;
+        margin-bottom: auto
+      }
+      /* PAGINA JUNTE_SE A NOS */
+    .imgjuntese{
+      background: url("../images/junte-se.png");
+      background-size: cover;
+      min-height: 350px;
+    }
+    .fomrjuntese {
+      background-color: #ecba49;
+      min-height: 450px;
+      padding: 20px;
+    }
+    .fomrjuntese .inputcontato {
+      margin: 10px 1px 10px 1px;
+    }
+    .fomrjuntese .meutextareac {
+      margin-top: 10px ;
+    }
+    .inputfile + label {
+      width: 100%;
+      color: #ecba49;
+      border: 2px solid #ecba49;
+      background-color: #121315;
+    }
+    .meubotaocontatoj {
+      width: 100%;
+    }
+    .meubotaocontato {
+      width: 100%;
+    }
+    .meubotaocontatoreverse {
+      width: 100%;
+    }
+    
+    /* PAGINA DETALHES */
+    .titlecontato {
+      font-size: 1.5em;
+    }
+    .icone-detalhes{
+      width: 25px;
+      margin-bottom: 20px;
+      height: 25px;
+    }
+    .com-detalhes b {
+      font-size: 1.3em;
+      margin-bottom: auto
+    }
+    .contato {
+      padding: 15px;
+    }
+    .formfale {
+      padding: 15px;
+    }
+    .titlecontato {
+      margin: 15px 1px 20px 1px;
+      font-size: 1.6em;
+    }
+    .titleform {
+      margin: 15px 1px 20px 1px; 
+      font-size: 1.6em;
+    }
+    .meutextareac {
+      margin-top: 20px;
+    }
+  
+    /* PAGINA CAD PRODUTOS */
+  
+    .multi_step_form #msform fieldset {
+      height: auto;
+      padding: 4px 0;
+    }
+    .info-text {
+      font-size: 1.2em !important;
+    }
+    .preview {
+      padding: 20px;
+      position: relative;
+    }
+    
 }
 
 /* 
@@ -1140,8 +1473,9 @@ button[disabled=disabled], button:disabled {
     margin-right: .2rem!important;
   }
   input.meu-form {
+    text-align: center;
     font-size: 0.6em;
-    padding: 5px 1px;
+    padding: 5px 3px;
     width: 100%;
   }
   .meu-select {
@@ -1198,6 +1532,9 @@ button[disabled=disabled], button:disabled {
     width: 100%;
   }
   .meubotaocontato {
+    width: 100%;
+  }
+  .meubotaocontatoreverse {
     width: 100%;
   }
   
@@ -1264,35 +1601,6 @@ button[disabled=disabled], button:disabled {
 
 
 @media (max-width: 320px) {
-  .multi_step_form #msform fieldset {
-    height: auto;
-    padding: 4px 0;
-  }
-  .info-text {
-    font-size: 1.2em !important;
-  }
-  .preview {
-    padding: 20px;
-    position: relative;
-  }
-  .multi_step_form #msform #progressbar li:before {
-    content: "1";
-    font: normal normal normal 15px/50px Ionicons;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-  .multi_step_form #msform #progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 5px;
-    background: #eaf0f4;
-    position: absolute;
-    left: -50%;
-    top: 13px;
-    z-index: -1;
-  }
-
   /* HOME */
   .destaques {
     margin-bottom: 20px;
@@ -1369,8 +1677,9 @@ button[disabled=disabled], button:disabled {
     margin-right: .2rem!important;
   }
   input.meu-form {
+    text-align: center;
     font-size: 0.6em;
-    padding: 5px 1px;
+    padding: 5px 2px;
     width: 100%;
   }
   .meu-select {
@@ -1428,6 +1737,9 @@ button[disabled=disabled], button:disabled {
     width: 100%;
   }
   .meubotaocontato {
+    width: 100%;
+  }
+  .meubotaocontatoreverse {
     width: 100%;
   }
   
@@ -1492,7 +1804,4 @@ button[disabled=disabled], button:disabled {
     top: 13px;
     z-index: -1;
   }
-
-
-
 }
