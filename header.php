@@ -1,12 +1,17 @@
 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div id="banner">
+  <nav id="navscroll" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <div class="meumenu">
-      <div><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <div class="menumob">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+         <i class="fas fa-bars"></i>
+        </span>
       </button>
+
       </div>
       <div class="logom">
       <img src="images/logop.png" alt="" class="imlogom">
@@ -47,7 +52,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Avaliação</a>
           </li>
-          </li>
         </ul>
 
         <ul class="navbar-nav">
@@ -74,3 +78,4 @@
       </div>
     </div>
   </nav>
+  </div>

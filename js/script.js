@@ -1,4 +1,47 @@
-$(document).ready(function(){
+// ESCONDER MENU BAR
+$("#banner").hide();
+// fade in .navbar
+$(function () {
+
+    if ($(window).width() > 1024) {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 680) {
+            $('#banner').fadeIn();
+        } else {
+            $('#banner').fadeOut();
+        }
+      });
+    } else if ($(window).width() < 1024 && $(window).width() < 720) {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 580) {
+            $('#banner').fadeIn();
+        } else {
+            $('#banner').fadeOut();
+        }
+      });
+    } else {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 480) {
+            $('#banner').fadeIn();
+        } else {
+            $('#banner').fadeOut();
+        }
+      });
+    }
+
+    /* $(document).ready(function(){
+    var banner = $("#meunav");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= banner.height()) {
+        $("#meubanner").fadeOut();
+      } else {
+        $("meubanner").fadeIn();
+      }
+    }); */
+  
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         if(value == "all")

@@ -1,4 +1,53 @@
 
+body{
+  margin: 0;
+  height: 100vh;
+}
+
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.fixed-footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1030;
+}
+.footermobile {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.fixed-bottommeu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.imglp {
+  width: 50px;
+  height: 50px;
+}
+
+#img{
+background-color: #121315;
+height: 100%;
+  width: 100%;
+  background-image: url("../images/logoww.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
 /* HEADER*/
 .bg-dark {
     background-color: #121315 !important;
@@ -919,7 +968,10 @@ padding-bottom: 5px;
 /* MENU MOBILE */
 .navbar-dark .navbar-toggler {
   color: #c19435 !important;
-  border-color: 0px !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: none !important;
 }
 /*.navbar-collapse {
   margin: 20px -16px 0px -16px;
@@ -965,6 +1017,13 @@ padding-bottom: 5px;
   height: 60px;
 }
 
+.menumob{
+  flex-grow: 1;
+}
+.menumob i {
+  font-size: 1.7em;
+}
+
 /*   MEDIA QUERIES */
 /* 
 ##Device = Desktops
@@ -1007,6 +1066,9 @@ padding-bottom: 5px;
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footermobile {
+    display: block;
+  }
   .destaques {
     margin-bottom: 20px;
   }
@@ -1205,6 +1267,16 @@ padding-bottom: 5px;
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .footermobile {
+    display: block;
+  }
+  .imglp {
+    width: 40px;
+    height: 40px;
+  }
+  #img{
+      background-image: url("../images/logowww.png");
+  }
   .destaques {
     margin-bottom: 20px;
   }
@@ -1402,6 +1474,16 @@ padding-bottom: 5px;
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .footermobile {
+    display: block;
+  }
+  .imglp {
+    width: 35px;
+    height: 35px;
+  }
+  #img{
+    background-image: url("../images/logowww.png");
+}
   .destaques {
     margin-bottom: 20px;
   }
@@ -1595,12 +1677,19 @@ padding-bottom: 5px;
     top: 13px;
     z-index: -1;
   }
-  
-
 }
 
-
 @media (max-width: 320px) {
+  .footermobile {
+    display: block;
+  }
+  .imglp {
+    width: 35px;
+    height: 35px;
+  }
+  #img{
+    background-image: url("../images/logowwww.png");
+}
   /* HOME */
   .destaques {
     margin-bottom: 20px;

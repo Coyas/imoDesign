@@ -15,12 +15,63 @@
   <link href="css/jssorlider.css" rel="stylesheet">
   <link href="css/lightbox.css" rel="stylesheet">
   <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
 
 </head>
 
 <body>
+<div id="img">
+  <!-- Page Content -->
+  <section>
+    <div class="container">
+      <div class="float-right row">
+        <div class="p-3">
+        <a href="#" title="Português"><img class="imglp" src="images/pt.png"></a>
+        <a href="#" title="Inglês"><img class="imglp" src="images/en.png"></a>
+        <a href="#" title="Francês"><img class="imglp"  src="images/fr.png"></a>  
+        </div>
+      </div>
+    </div>
+  </section>
+<div id="meubanner">
+  <nav id="meunav" class="navbar navbar-expand-lg fixed-bottommeu">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Arrendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Legalizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Junte-se a nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Avaliação</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  </div>
+  <div class="fixed-footer p-3 footermobile">
+    <a href="#"> <img src="images/facebook.png" width="50" height="50" alt="Nosso Facebook"> </a>
+  </div>
+
+</div>
 
 <?php 
   require('header.php');
@@ -51,5 +102,4 @@
   <script src="js/lightbox.js"></script>
 
 </body>
-
 </html>
